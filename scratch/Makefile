@@ -1,6 +1,6 @@
 include ../Makefile.inc
 
-GEN_EXE = err glibver  getnum
+GEN_EXE = err glibver  getnum rebhdr sembuf
 
 LINUX_EXE = 
 
