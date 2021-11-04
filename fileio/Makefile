@@ -1,7 +1,7 @@
 include ../Makefile.inc
 
 GEN_EXE = atomic_append bad_exclusive_open copy \
-	multi_descriptors seek_io t_readv t_truncate mytee
+	multi_descriptors seek_io t_readv t_truncate mytee redirect
 
 LINUX_EXE = large_file
 
@@ -13,7 +13,7 @@ allgen : ${GEN_EXE}
 
 
 clean : 
-	${RM} ${EXE} *.o
+	${RM} ${EXE} *.o a foo
 
 showall :
 	@ echo ${EXE}
