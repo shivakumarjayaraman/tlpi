@@ -62,8 +62,7 @@ main(int argc, char *argv[])
     if (numRead < totRequired)
         printf("Read fewer bytes than requested\n");
 
-    /*FIXME: should use %zd here, and remove (long) cast */
-    printf("total bytes requested: %ld; bytes read: %ld\n",
-            (long) totRequired, (long) numRead);
+    printf ("%d %d %s\n", myStruct.st_ino, x, str);
+
     exit(EXIT_SUCCESS);
 }
